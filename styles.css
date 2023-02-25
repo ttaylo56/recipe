@@ -73,6 +73,10 @@ dd {
     text-align: center;
 }
 
+h4 {
+    font-size: 20px;
+}
+
 .good-eats-street-tacos {
     display: none;
 }
@@ -113,28 +117,29 @@ dd {
 .tacos {
     width: 31.45%;
     margin-left: 84px;
+    margin-right: 10px;
     float: left;
 }
 
 aside h2 {
     font-size: 30px;
     text-align: center;
+    margin-top: -40px;
+    margin-bottom: 24px;
 }
 
 .paragraph-1 {
     font-size: 16px;
-    float: right;
     margin-right: 120px;
     line-height: 30px;
-    max-width: 650px;
+    margin-bottom: 10px;
 }
 
 .paragraph-2 {
     font-size: 16px;
-    float: right;
+    margin-left: 10px;
     margin-right: 120px;
     line-height: 30px;
-    max-width: 650px;
 }
 
 /* .taco-paragraph-1 {
@@ -169,7 +174,7 @@ aside h2 {
     font-weight: light;
 }
 
-.grid-parent {
+.details-grid-parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 20px;
@@ -203,6 +208,7 @@ nav {
     background-color: white;
     width: 1280px;
     height: 104px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .2);
 }
 
 nav a {
@@ -226,6 +232,8 @@ nav span {
 nav img {
     width: 60px;
     display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .spacer {
@@ -247,6 +255,34 @@ nav img {
 
 .search {
     position: absolute;
+    top: 150px;
+    left: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search svg {
+    background-color: #EB5428;
+    stroke: white;
+    padding: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.search svg:hover {
+    background-color: #fff;
+    stroke: #EB5428;
+}
+
+.search a {
+    padding: 0px;
+    margin: 0px;
+}
+
+input {
+    font-size: 16px;
+    border: solid #EB5428 1px;
+    width: 200px;
+    height: 38px;
 }
 
 .avatar {
@@ -254,15 +290,16 @@ nav img {
     right: 0px;
     padding: 10px;
     transition: all 0.2s ease-in-out;
+    height: 85px;
+    padding: 10px;
 }
 
-.avatar li {
-    padding: 10px;
+.avatar svg {
+    display: block;
 }
 
 .avatar span {
     text-align: center;
-    margin-left: 10px;
     color: black;
     transition: all 0.5s ease-in-out;
 }
@@ -282,4 +319,79 @@ nav img {
 
 .avatar:hover span {
     color: white;
+}
+
+.nav-food {
+    height: 104px;
+    width: 80px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-food:hover {
+    background-color: #EB5428;
+}
+
+.nav-food a {
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-food:hover a {
+    color: white;
+}
+
+#ingredients h3 {
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.ingredients {
+    margin-left: 30px;
+}
+
+.ingredients li {
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+.ingredients-directions-grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#directions h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 140px;
+
+}
+
+.directions li {
+    list-style-type: normal;
+    line-height: 40px;
+}
+
+#extra-dishes {
+    background-color: #7ABFBF;
+}
+
+#extra-dishes h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dishes-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.rating {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
